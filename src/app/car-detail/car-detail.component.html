@@ -1,0 +1,9 @@
+<div *ngIf="selectedCar">
+  <h2>{{selectedCar.model}} details : </h2>
+  <div>Id : {{selectedCar.id}}</div>
+  <div>Marque : <input [(ngModel)]="selectedCar.brand" placeholder="Brand"/></div>
+  <div>Modèle : <input [(ngModel)]="selectedCar.model" placeholder="Model" />{{selectedCar.model}}</div>
+  <div>Price : {{selectedCar.price}}</div>
+  <div>Puissance : {{selectedCar.horsePower}}</div>
+  <div>Poids : {{selectedCar.weight}}</div>
+</div>
